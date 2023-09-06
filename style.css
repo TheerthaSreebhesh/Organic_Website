@@ -1,0 +1,532 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+body,html{
+    color: #061738;
+    font-size: 10px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+h1.h2,h3,h4,h5,h6,p{
+    margin: 0;
+
+}
+h1{
+    font-size: 9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #061738;
+}
+h2{
+    color: #061738;
+    font-size: 4.7rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+h3{
+    color: white;
+    font-size: 3.1rem;
+    line-height: 1.2rem;
+    font-weight: 700;
+}
+h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #061738;
+}
+h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #061738;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: #061738;
+}
+embed,iframe,img,
+object{
+    max-width: 100%;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a, a:active, a:focus,
+a:hover, button{
+    text-decoration: none;
+    outline: 0;
+}
+li a{
+    color: white;
+}
+a:hover,
+button:hover{
+    transition: all 0.3s ease-in;
+
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: white;
+}
+::-webkit-scrollbar-thumb{
+    background:#60cd12;
+}
+.btn.main-btn{
+    position: relative;
+    color: white;
+    background: green;
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid white;
+    border-radius: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+.main-btn:hover{
+    background:white;
+    color: #60cd12;
+    border: 0.2rem solid #60cd12;
+}
+
+section{
+    padding: 5rem 0;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.section-subtitle{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #061738;
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+.about .banner_section,
+.product .banner_section,
+.gallery .banner_section,
+.contact .banner_section{
+    background: url(Images/top-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    min-height: auto;
+}
+
+
+/*  Nav Bar   */
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+}
+.header .navbar{
+    background: url(Images/header-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+    
+}
+.header .navbar-brand{
+    width: 7.5rem;
+    margin-top: -0.1rem;
+}
+.header .navbar-nav .nav-link{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+    
+}
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active{
+    color: #60cd12;
+}
+.header .navbar-toggler{
+    color: white;
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+}
+.header .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.header .header-right span{
+    color: #60cd12;
+    display: block;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-right: 1rem;
+}
+.header .header-right .phone-no{
+    color: white;
+    font-size: 1.6rem;
+}
+.header-scrolled{
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    transition: 0.3s all ease-in-out;
+}
+
+
+/*   Banner Session   */
+.banner_section{
+    background: url(Images/Banner-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 90vh;
+    margin-bottom: 25px;
+
+}
+
+.banner_section .carousel-item{
+    padding: 3rem 0;
+    height: 90vh;
+}
+
+.banner-content h1{
+    font-size: 5rem;
+    padding-bottom: 5px;
+}
+.banner-content h3{
+    font-size: 2.5rem;
+    color:white;
+    background: #03262c;
+    display: inline;
+}
+.banner-content p{
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.banner_section .carousel-caption{
+    top: 30%;
+    bottom: 0;
+    left: 3%;
+    right: 0;
+    text-align: left;
+    width: 100%;
+}
+
+/*   Features Section   */
+
+#about{
+    padding-top: 10rem;
+}
+.feature_section .card.features-box{
+    background-color: transparent;
+    border: 0.15rem solid whitesmoke;
+    padding: 8rem 0;;
+    transition: all 0.3s;
+}
+.card.features-box .features-icon-border{
+    background-color:transparent;
+    border-radius: 50%;
+    border: 0.2rem solid whitesmoke;
+    padding: 1.3rem;
+    display: inline-block;
+}
+.card.features-box .features-icon-border img{
+    height: 6.5rem;
+    width: 6.5;
+    background-color: whitesmoke;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card.features-box .features-text h3{
+    margin-top: 1.25rem;
+    color: #061738;
+
+}
+.card.features-box:hover{
+    background-color: #03262c;
+    border-color: #03262c;
+}
+.card.features-box:hover h3{
+    color: white;
+}
+.card.features-box:hover .features-icon-border{
+    border-color: #60cd12;
+}
+
+
+/*  About Session   */
+.about-content h2{
+    font-size: 4rem;
+   
+}
+.about_section{
+    background: url(Images/about-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15rem 0;
+}
+.section-title{
+    color: #061738;
+    margin-top: 2rem;
+}
+
+
+/*  product details */
+
+#product{
+    padding-top: 10rem;
+}
+.product_section .product-card{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 0.5rem solid whitesmoke;
+    padding: 2rem 1rem;
+    transition: all 0.3s;
+
+}
+.product-card img{
+    margin-bottom: 7rem;
+    text-align: center;
+}
+.product-card h3{
+    color: #061738;
+}
+.product-card span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #60cd12;
+    margin-right: 0.5rem;
+    text-decoration: line-through;
+    transition: all 0.3s;
+}
+.product-card .product-details{
+    position: absolute;
+
+bottom: -22rem;
+right: 0;
+left: 0;
+text-align: center;
+padding: 5rem 1rem;
+background-color: #03262c;
+transition: all 0.5s ease;
+}
+.product-card:hover .product-details{
+    bottom: 0;
+}
+
+/*   Gallery Session   */
+
+#gallery{
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+}
+
+.gallery_section img{
+    width: 30rem;
+    height: 20rem;
+}
+
+/*   Contact Session   */
+.footer_wrapper .row{
+    background: url(Images/footer_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+}
+.footer_wrapper h5{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+.footer_wrapper a{
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+.footer_wrapper p{
+    color: whitesmoke;
+}
+.footer_wrapper i{
+   padding-right: 2rem;
+}
+.footer_wrapper a:hover{
+    color:#60cd12;
+}
+
+/*   Form Session   */
+
+.contact{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 15rem 2rem;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background:#03262c;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;    
+}
+.contact .btn.main-btn{
+    margin-left: 42%;
+}
+#msg{
+    border-radius: 2%;
+    text-align: center;
+    position: absolute;
+    margin-left: 5rem;
+    margin-top: 0;
+    background: #60cd12;
+    width: max-content;
+    font-size: 2rem;
+    color:white;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   Media Query 1170px  */
+@media (max-width:1170px){
+    .section-subtitle{
+        max-width: 60%;
+    }
+
+}
+
+/*   Media Query 991px  */
+@media (max-width:991px){
+
+.about .banner_section,
+.product .banner_section,
+.gallery .banner_section,
+.contact .banner_section{
+    
+    padding-top: 12.5rem;
+    padding-bottom: 3rem;
+
+}
+
+.header .navbar{
+    background-size: cover;
+    padding: 2rem;
+}
+
+.header .navbar-nav{
+    margin-top: 2rem;
+}
+
+.header .navbar-nav .nav-link{
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.header .header-right span{
+    padding: 0.2rem 0.5rem;
+
+}
+.gallery_section img{
+    width: 30rem;
+    height: 20rem;
+}
+
+
+}
+
+/*   Media Query 767px  */
+@media (max-width:767px){
+
+    body,html{
+        font-size: 8px;
+    }
+    .section-subtitle{
+        max-width: 80%;
+    }
+    .banner_section{
+        min-height: 70vh;
+    }
+    .banner_section .carousel-item{
+        height: 70vh;
+    }
+    .gallery_section img{
+        width: 30rem;
+        height: 20rem;
+    }
+
+
+}
+
+/*   Media Query 590px  */
+@media (max-width:590px){
+
+    body,html{
+        font-size: 7px;
+    }
+    .gallery_section img{
+        padding:0 2rem ;
+        width: 100%;
+        height: 100%;
+    }
+}
+
